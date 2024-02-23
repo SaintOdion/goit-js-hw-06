@@ -12,6 +12,7 @@ document.body.style.transition = "background-color 0.4s ease-in-out";
 btn.addEventListener("click", updateColor);
 
 function updateColor() {
-  document.body.style.backgroundColor = getRandomHexColor();
-  currentColor.textContent = getRandomHexColor();
+  const newColor = getRandomHexColor();
+  document.body.style.backgroundColor = newColor;
+  currentColor.textContent = newColor;
 }
